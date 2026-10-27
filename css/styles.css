@@ -1,0 +1,27 @@
+/*
+  Ashion - Hoja de estilos principal
+  Autora: Geraldine Herrera Rodríguez
+  Metodología BEM: bloque__elemento--modificador
+  Bloques: header (encabezado) y categories (categorías)
+*/
+
+/* ===================== 1. VARIABLES Y BASE ===================== */
+:root {
+  --color-text: #111111;
+  --color-muted: #666666;
+  --color-accent: #ca1515;
+  --color-white: #ffffff;
+  --color-women: #f9e4d9;
+  --color-men: #c2e5db;
+  --color-kids: #d7d5ef;
+  --color-cosmetics: #f9dbe0;
+  --color-accessories: #cfe1f4;
+  --font-main: "Montserrat", sans-serif;
+  --font-script: "Cookie", cursive;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background-color: var(--color-white);
+}
