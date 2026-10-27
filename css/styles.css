@@ -133,3 +133,113 @@ body {
   border: none;
   box-shadow: none !important;
 }
+
+/* ===================== 3. BLOQUE CATEGORIES ===================== */
+.categories {
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+.categories__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 352px;
+  padding: 0 34px;
+  overflow: hidden;
+}
+
+/* Modificador: tarjeta principal (Women's fashion) */
+.categories__item--large {
+  min-height: 712px;
+  padding: 0 76px;
+}
+
+/* Modificadores de color por categoría */
+.categories__item--women {
+  background-color: var(--color-women);
+}
+
+.categories__item--men {
+  background-color: var(--color-men);
+}
+
+.categories__item--kids {
+  background-color: var(--color-kids);
+}
+
+.categories__item--cosmetics {
+  background-color: var(--color-cosmetics);
+}
+
+.categories__item--accessories {
+  background-color: var(--color-accessories);
+}
+
+.categories__text {
+  position: relative;
+  z-index: 2;
+}
+
+.categories__text--large {
+  max-width: 540px;
+}
+
+.categories__title {
+  margin-bottom: 4px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Modificador: título con letra manuscrita */
+.categories__title--script {
+  margin-bottom: 24px;
+  font-family: var(--font-script);
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.categories__count {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: var(--color-muted);
+}
+
+.categories__description {
+  margin-bottom: 26px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--color-muted);
+}
+
+.categories__link {
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 2px solid var(--color-accent);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+.categories__link:hover {
+  color: var(--color-accent);
+}
+
+.categories__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 100%;
+  max-width: 62%;
+  object-fit: contain;
+  object-position: right bottom;
+}
+
+.categories__item--large .categories__img {
+  max-width: 50%;
+}
