@@ -25,3 +25,111 @@ body {
   color: var(--color-text);
   background-color: var(--color-white);
 }
+/* ===================== 2. BLOQUE HEADER ===================== */
+.header {
+  position: relative;
+  z-index: 10;
+  background-color: var(--color-white);
+  border-top: 2px solid #d9d9d9;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+}
+
+.header__navbar {
+  padding: 18px 0;
+}
+
+.header__container {
+  padding: 0 48px;
+}
+
+.header__logo {
+  font-family: var(--font-script);
+  font-size: 52px;
+  line-height: 1;
+  color: var(--color-text);
+}
+
+.header__logo:hover {
+  color: var(--color-text);
+}
+
+.header__menu {
+  gap: 28px;
+}
+
+.header__menu .header__link {
+  position: relative;
+  padding: 4px 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+/* Línea roja bajo el enlace */
+.header__menu .header__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.header__menu .header__link:hover::after,
+.header__menu .header__link--active::after {
+  width: 100%;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.header__account {
+  margin-right: 8px;
+  font-size: 14px;
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.header__account:hover {
+  color: var(--color-accent);
+}
+
+.header__icon {
+  position: relative;
+  font-size: 21px;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.header__icon:hover {
+  color: var(--color-accent);
+}
+
+.header__badge {
+  position: absolute;
+  top: -9px;
+  right: -11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
+  background-color: var(--color-text);
+  color: var(--color-white);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.header__toggler {
+  margin-left: 20px;
+  border: none;
+  box-shadow: none !important;
+}
