@@ -243,3 +243,95 @@ body {
 .categories__item--large .categories__img {
   max-width: 50%;
 }
+
+/* ===================== 4. RESPONSIVE ===================== */
+
+/* Portátiles pequeños */
+@media (max-width: 1199.98px) {
+  .header__container {
+    padding: 0 24px;
+  }
+
+  .header__menu {
+    gap: 20px;
+  }
+
+  .categories__item--large {
+    padding: 0 48px;
+  }
+
+  .categories__title--script {
+    font-size: 64px;
+  }
+}
+
+/* Tablet: el menú se colapsa y las columnas se apilan */
+@media (max-width: 991.98px) {
+  .header__menu {
+    gap: 0;
+    padding-top: 12px;
+  }
+
+  .header__menu .header__link {
+    display: inline-block;
+    padding: 10px 0;
+  }
+
+  .header__menu .header__link::after {
+    bottom: 4px;
+  }
+
+  .categories__item {
+    min-height: 320px;
+  }
+
+  .categories__item--large {
+    min-height: 500px;
+  }
+}
+
+/* Celular */
+@media (max-width: 575.98px) {
+  .header__container {
+    padding: 0 16px;
+  }
+
+  .header__logo {
+    font-size: 42px;
+  }
+
+  .header__actions {
+    gap: 20px;
+  }
+
+  .categories__item {
+    min-height: 260px;
+    padding: 0 24px;
+  }
+
+  .categories__item--large {
+    min-height: 440px;
+  }
+
+  .categories__text--large {
+    max-width: 68%;
+  }
+
+  .categories__title {
+    font-size: 24px;
+  }
+
+  .categories__title--script {
+    margin-bottom: 14px;
+    font-size: 62px;
+  }
+
+  .categories__description {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .categories__img {
+    max-width: 55%;
+  }
+}
